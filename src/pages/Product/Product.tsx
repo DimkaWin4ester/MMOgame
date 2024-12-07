@@ -17,8 +17,6 @@ export default function Product() {
     dispatch(fetchProductOne(Number(id)));
   }, [dispatch, id]);
 
-  console.log(productOne);
-
   return (
     <div className={style.main_wrapper}>
       <div>

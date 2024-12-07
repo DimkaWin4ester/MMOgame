@@ -30,7 +30,7 @@ export default function Products() {
       likedProducts.includes(product.id)
     );
   }
-console.log(products)
+
   return (
     <div className={style.main_wrapper}>
         <div>
