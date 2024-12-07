@@ -1,0 +1,10 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  min-height: 100vh;
+}

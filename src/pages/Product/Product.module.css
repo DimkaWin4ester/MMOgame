@@ -1,0 +1,46 @@
+.main_wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main_wrapper h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.main_wrapper h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.main_wrapper img {
+  max-height: 206px;
+}
+.box1 {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box2 {
+  max-width: 75%;
+  text-indent: 2rem;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.box4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 80%;
+  justify-content: center;
+}
