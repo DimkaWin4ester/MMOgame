@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Navigate to="/products" />} />
           <Route path="*" element={<Navigate to="/products" />} />
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<Product />} />
