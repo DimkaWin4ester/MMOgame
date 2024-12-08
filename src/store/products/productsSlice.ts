@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { API_KEY } from 'const';
 import { jsonParseOrNull } from 'utils/json-try-parse';
 
 export interface Product {
@@ -39,7 +38,7 @@ export const fetchProducts = createAsyncThunk(
       headers: {
         'Content-Type': 'application/json',
         'x-rapidapi-host': `mmo-games.p.rapidapi.com`,
-        'x-rapidapi-key': `${API_KEY}`,
+        'x-rapidapi-key': `ed86c53407msh0c2bc1600388b22p1ae3e4jsnf18683e6b658`,
       },
       signal,
     });
