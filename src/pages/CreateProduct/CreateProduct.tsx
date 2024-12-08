@@ -31,7 +31,7 @@ export default function CreateProduct() {
   const onSubmit = (data: { id: number; thumbnail: string; developer: string; game_url: string; publisher: string; }) => {
     console.log(data);
     data.id = Date.now();
-    data.thumbnail = '/src/assets/rpg_game_nb6ycbjref66.svg';
+    data.thumbnail = 'assets/rpg_game_nb6ycbjref66.svg';
     data.developer ||= 'Неизвестен';
     data.game_url ||= 'Неизвестен';
     data.publisher ||= 'Неизвестен';
