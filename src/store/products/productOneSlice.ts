@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { API_URL, API_KEY, API_HOST } from 'const';
+import { API_KEY } from 'const';
 import { jsonParseOrNull } from 'utils/json-try-parse';
 import { Product } from './productsSlice';
 
@@ -44,11 +44,11 @@ export const fetchProductOne = createAsyncThunk(
       return dataFromLocalStorage;
     }
 
-    const response = await fetch(`${API_URL}/game?id=${id}`, {
+    const response = await fetch(`https://mmo-games.p.rapidapi.com/game?id=${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'x-rapidapi-host': `${API_HOST}`,
+        'x-rapidapi-host': `mmo-games.p.rapidapi.com`,
         'x-rapidapi-key': `${API_KEY}`,
       },
       signal,

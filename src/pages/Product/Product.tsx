@@ -24,7 +24,7 @@ export default function Product() {
         {error && <span>{error}</span>}
       </div>
       <h1>{productOne?.title}</h1>
-      <img src={productOne?.thumbnail} alt="card_image" />
+      <img className={style.image} src={productOne?.thumbnail} alt="card_image" />
       <div className={style.box1}>
         <div
           className={style.box2}
